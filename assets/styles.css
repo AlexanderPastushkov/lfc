@@ -119,9 +119,7 @@ h6 {
 .inner2 {
   justify-self: center;
 }
-.inner6 {
-  /* align-self: center; */
-}
+
 .inner10 {
   grid-area: 3/3/3/5;
 }
@@ -143,16 +141,15 @@ h6 {
 #intro__title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 3em;
-  letter-spacing: 8px;
+  font-size: 45px;
   color: #a61f1f;
   font-family: "Josefin Sans", sans-serif;
   transition: letter-spacing 0.9s;
   margin-bottom: 20px;
 }
-#intro__title:hover {
+/* #intro__title:hover {
   letter-spacing: 18px;
-}
+} */
 .intro__inner {
   width: 100%;
   padding: 15px;
@@ -253,30 +250,34 @@ margin: 25px 0;
 .team__item:hover {
   opacity: 1;
 }
-/* grid**
-******************************* */
-/* .grid{
-display: grid;
-grid-template-columns: 150px 1fr;
-grid-template-rows: 100px 1fr;
-grid-template-areas:"up up" "side content" ;
 
-}
-.up{
-grid-area: up;
-}
-.side{grid-area:side;
+@media (max-width:700px){
+  /* header */
+  .header__inner{
+    display: block;
+    text-align: center;
 
+  }
+/* logo */
+.logo__title{
+  padding-top: 250px;
+  font-size: 22px;
 }
-.content{
-grid-area: content;
+.logo {
+  display: flex;
+  flex-wrap: wrap;
 }
-.up,
-.side,
-.content{
-  padding: 20px;
-  border: 2px dashed #333;
+/* intro */
+.intro{
+  display: flex;
+  flex-wrap: wrap;
+}
+#intro__title{
+  font-size: 25px;
+  
+}
 
-}
+} 
 
- */
+ 
+
